@@ -1,2 +1,14 @@
 # regressao-linear-tecnicas-avancadas
+
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+
+![Badge code size](https://img.shields.io/github/languages/code-size/fab-souza/regressao-linear-tecnicas-avancadas)
+
+| :placard: Vitrine.Dev |    |
+| -------------  | --- |
+| :sparkles: Nome        | **Regressão Linear: técnicas avançadas de modelagem**
+| :label: Tecnologias | python
+| :rocket: URL         | 
+| :fire: Desafio     | 
+
 O que aprendi no 6º curso da formação Data Science (Alura)
