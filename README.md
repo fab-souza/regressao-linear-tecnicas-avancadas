@@ -9,6 +9,6 @@
 | :sparkles: Nome        | **Regressão Linear: técnicas avançadas de modelagem**
 | :label: Tecnologias | python
 | :rocket: URL         | 
-| :fire: Desafio     | 
+| :fire: Desafio     | Conteúdo do [curso](https://www.alura.com.br/curso-online-data-science-modelo-regressao-linear-assimetria-statsmodel)
 
 O que aprendi no 6º curso da formação Data Science (Alura)
