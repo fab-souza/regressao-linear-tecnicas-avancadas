@@ -11,4 +11,6 @@
 | :rocket: URL         | 
 | :fire: Desafio     | Conteúdo do [curso](https://www.alura.com.br/curso-online-data-science-modelo-regressao-linear-assimetria-statsmodel)
 
+![](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/9b9aa0b1-2c78-4800-ac0f-c5c357e5b70d)
+
 O que aprendi no 6º curso da formação Data Science (Alura)
