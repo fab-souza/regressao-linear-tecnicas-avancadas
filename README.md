@@ -19,3 +19,10 @@ Continuando a pôr em prática o que aprendi na formação Data Science/Estatís
 - mais análises gráficas, como comportamento da variável dependente, box-plot e distribuição de frequências; 
 - transformação de variáveis, destacando sua importância e o uso de transformações logarítmicas;
 - e regressão linear, usando StatsModels e Scikit Learn, abrangendo a estimativa do modelo, interpretação dos coeficientes, análises gráficas e testes formais.
+
+Para pôr em prática estes conteúdos, utilizamos um dataset de uma amostra aleatória de 5000 imóveis disponíveis para venda no município do Rio de Janeiro. Ele é composto por quatro variáveis: 
+
+- **Valor** - Preço (R$) de oferta do imóvel
+- **Area** - Área do imóvel em m²
+- **Dist_Praia** - Distância do imóvel até a praia (km) (em linha reta)
+- **Dist_Farmacia** - Distância do imóvel até a farmácia mais próxima (km) (em linha reta)
