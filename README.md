@@ -26,3 +26,5 @@ Para pôr em prática estes conteúdos, utilizamos um dataset de uma amostra ale
 - **Area** - Área do imóvel em m²
 - **Dist_Praia** - Distância do imóvel até a praia (km) (em linha reta)
 - **Dist_Farmacia** - Distância do imóvel até a farmácia mais próxima (km) (em linha reta)
+
+![image](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/2045aed8-6ca6-40d5-8d5f-518afc2ebf58)
