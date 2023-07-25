@@ -13,6 +13,7 @@
 
 ![](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/9b9aa0b1-2c78-4800-ac0f-c5c357e5b70d)
 
+# Sobre o curso 📚
 Continuando a pôr em prática o que aprendi na formação Data Science/Estatística da [Alura](https://www.alura.com.br/), neste curso, também ministrado pelo instrutor [Rodrigo Dias](https://www.linkedin.com/in/rodrigo-fernando-dias-118181120/), aprendi novas técnicas de:
 
 - análises preliminares do dataset, incluindo informações do DataFrame Pandas e avaliações descritivas dos dados; 
