@@ -52,3 +52,21 @@ Para pôr em prática estes conteúdos, utilizamos um dataset de uma amostra ale
 
 
 # Conclusão 🏁
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Ferramentas utilizadas 🧰
+
