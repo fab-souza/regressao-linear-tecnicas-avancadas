@@ -32,6 +32,7 @@ Para pôr em prática estes conteúdos, utilizamos um dataset de uma amostra ale
 
 Ao longo do curso, desenvolvemos alguns modelos de predição de valor e finalizando com a predição de um valor a partir de dados pontuais.
 
+![image](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/b6ae81d7-cd2f-495a-b2db-023956357480)
 
 
 
