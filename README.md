@@ -39,7 +39,7 @@ Ao longo do curso, desenvolvemos alguns modelos de predição de valor e finaliz
 
 # Minha prática 👩🏻‍💻 
 
-
+Para praticar o que aprendi, utilizei um dataset disponível no [Kaggle](https://www.kaggle.com) sobre [preço de carros na Polônia](https://www.kaggle.com/datasets/bartoszpieniak/poland-cars-for-sale-dataset).
 
 
 
