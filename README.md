@@ -39,7 +39,33 @@ Ao longo do curso, desenvolvemos alguns modelos de predição de valor e finaliz
 
 # Minha prática 👩🏻‍💻 
 
-Para praticar o que aprendi, utilizei um dataset disponível no [Kaggle](https://www.kaggle.com) sobre [preço de carros na Polônia](https://www.kaggle.com/datasets/bartoszpieniak/poland-cars-for-sale-dataset).
+Para praticar o que aprendi, utilizei um dataset disponível no [Kaggle](https://www.kaggle.com) sobre [preço de carros na Polônia](https://www.kaggle.com/datasets/bartoszpieniak/poland-cars-for-sale-dataset). Originalmente, composto por mais de 20 colunas:
+
+* ID - ID do carro
+* Price - preço do veículo
+* Currency - moeda de negociação do veículo (złoty polenês ou euro)
+* Condition - condição, novo ou usado
+* Vehicle_brand - marca do fabricante
+* Vehicle_model - modelo do veículo
+* Vehicle_generation - geração do veículo
+* Vehicle_version - versão do veículo
+* Production_year - ano de fabricação
+* Mileage_km - quilometragem rodada
+* Power_HP - potência do motor, em horse power (cavalo vapor)
+* Displacement_cm3 - tamanho do motor, em centímetro cúbico
+* Fuel_type - tipo de combustível
+* CO2_emissions - emissão de CO2, em g/km
+* Drive - tipo de condução do carro
+* Transmission - ipo de transmissão
+* Type - estilo do carro
+* Doors_number - número de portas
+* Colour - cor do veículo
+* Origin_country - país de origem do carro
+* First_owner - se o carro está no primeiro proprietário
+* First_registration_date - data do primeiro registro de compra
+* Offer_publication_date - data de publicação da venda
+* Offer_location - endereço do vendedor
+* Features - características do carro (ABS, airbag, sensores de estacionamento, etc)
 
 
 
