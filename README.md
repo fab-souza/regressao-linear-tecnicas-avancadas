@@ -67,6 +67,13 @@ Para praticar o que aprendi, utilizei um dataset disponível no [Kaggle](https:/
 * Offer_location - endereço do vendedor
 * Features - características do carro (ABS, airbag, sensores de estacionamento, etc)
 
+Com mais de 208 mil registros. Porém, decidi trabalhar com apenas seis colunas:
+- Preço;
+- Ano de fabricação;
+- Quilômetros rodados;
+- Potência do motor; 
+- Tamanho do motor;
+- e Número de portas.
 
 
 
