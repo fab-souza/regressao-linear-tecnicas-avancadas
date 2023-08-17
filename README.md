@@ -67,6 +67,8 @@ Para praticar o que aprendi, utilizei um dataset disponível no [Kaggle](https:/
 * Offer_location - endereço do vendedor
 * Features - características do carro (ABS, airbag, sensores de estacionamento, etc)
 
+![image](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/3cee8867-80a2-4fa3-9ef3-5491657045ce)
+
 Com mais de 208 mil registros. Porém, decidi trabalhar com apenas seis colunas:
 - Preço;
 - Ano de fabricação;
