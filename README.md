@@ -77,6 +77,7 @@ Com mais de 208 mil registros. Porém, decidi trabalhar com apenas seis colunas:
 - Tamanho do motor;
 - e Número de portas.
 
+![image](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/a5847220-0ac1-4d04-b6ce-efea7c33c7c2)
 
 
 
