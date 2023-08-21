@@ -79,7 +79,7 @@ Com mais de 208 mil registros. Porém, decidi trabalhar com apenas seis colunas:
 
 ![image](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/a5847220-0ac1-4d04-b6ce-efea7c33c7c2)
 
-
+Após tratá-los, por exemplo, fazendo a exclusão de dados nulos e discrepantes, iniciei minhas análises em um DataFrame com 203.813 registros.
 
 
 
