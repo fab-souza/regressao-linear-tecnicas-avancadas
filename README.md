@@ -83,7 +83,42 @@ Após tratá-los, por exemplo, fazendo a exclusão de dados nulos e discrepantes
 
 ![describe](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/609cad2a-fff5-4b7f-833f-28971bd07609)
 
-Passando para a matriz de correlação, vemos que, em relação ao *Preço*, nossa variável dependente (Y), a *Potencia_motor* é a única que possui uma correlação maior do que 0,5. Em relação às variáveis *Ano_fabricação* e *Tamanho_motor*, vemos que também há uma associação positiva em relação ao *Preço*, enquanto para as variáveis *Km_rodado* e *Número_portas* há uma associação negativa. Podemos inferir que, quanto maior for a quilometragem rodada, o veículo precisará passar por uma análise mais rigorosa a cada manutenção, fator que pode jogar o preço de revenda para baixo. Já em relação ao número de portas, a inferência que consigo elaborar é em relação aos modelos dos carros: automóveis do tipo conversível/esportivo, que são os mais caros, possuem poucas portas. Por outro lado, veículos com preços mais acessíveis, que dão preferência à comodidade das pessoas, muitas vezes, oferecem mais espaço para passageiros, ou acomodação para transportar grandes objetos, consequentemente, eles precisam de um número maior de portas. Mas, não posso esquecer que há veículos, de duas portas, que não são do tipo conversível ou esportivo. Nesses casos, o carro oferece relativo conforto, baixo consumo de combustível e baixo custo de manutenção.
+Passando para a matriz de correlação, vemos que, em relação ao *Preço*, nossa variável dependente (Y), a *Potencia_motor* é a única que possui uma correlação maior do que 0,5. Em relação às variáveis *Ano_fabricação* e *Tamanho_motor*, vemos que também há uma associação positiva em relação ao *Preço*, enquanto para as variáveis *Km_rodado* e *Número_portas* há uma associação negativa. 
+
+Podemos inferir que, quanto maior for a quilometragem rodada, o veículo precisará passar por uma análise mais rigorosa a cada manutenção, fator que pode jogar o preço de revenda para baixo. Já em relação ao número de portas, a inferência que consigo elaborar é em relação aos modelos dos carros: automóveis do tipo conversível/esportivo, que são os mais caros, possuem poucas portas. Por outro lado, também há veículos com preços mais acessíveis, que dão preferência à comodidade das pessoas, muitas vezes, oferecem mais espaço para passageiros, ou acomodação para transportar grandes objetos, consequentemente, eles precisam de um número maior de portas. Mas, não posso esquecer que há veículos, de duas portas, que **não** são do tipo conversível ou esportivo. Nesses casos, o carro oferece relativo conforto, baixo consumo de combustível e baixo custo de manutenção.
+
+![matriz-corr](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/27d1d1dc-e8aa-4cfe-8dba-425576d3e481)
+
+Ao fazer o **box-plot** dos *Preços*, vemos que o carro de quase 7 milhões está muito distante dos demais e decidi apagá-lo. Após a retirada do **outlier**, observa-se que o box-plot ainda possui uma assimetria, indicando uma maior concentração dos *Preços* a 0,0 do que a 2,5 (na escala e^6).
+
+![box-plot](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/7182a8a6-72d5-42b6-8081-5f35a61d0f20)
+
+![box-plot2](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/6a6df985-8e01-4a96-83b1-822a66c0cc32)
+
+Passando para a distribuição de frequência dos *Preços*, vemos que o comportamento observado no box-plot se repete. Há mais carros com valores mais baixos, com aproximadamente o mesmo preço e seguindo um mesmo padrão, do que carros de luxo, que compõem a minoria e são mais caros. Isso faz com que ocorra problemas na criação do modelo de regressão, já que o ideal é trabalhar com dados que estejam distribuídos de forma simétrica, pois testes paramétricos assumem que os dados amostrais foram coletados de uma população com distribuição de probabilidade conhecida.
+
+![frequencias](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/19c99d08-4b28-4048-a967-3ba3e1533fbb)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
