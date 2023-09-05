@@ -67,7 +67,7 @@ Para praticar o que aprendi, utilizei um dataset disponível no [Kaggle](https:/
 * Offer_location - endereço do vendedor
 * Features - características do carro (ABS, airbag, sensores de estacionamento, etc)
 
-![image](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/3cee8867-80a2-4fa3-9ef3-5491657045ce)
+![df](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/3cee8867-80a2-4fa3-9ef3-5491657045ce)
 
 Com mais de 208 mil registros. Porém, decidi trabalhar com apenas seis colunas:
 - Preço;
@@ -77,12 +77,13 @@ Com mais de 208 mil registros. Porém, decidi trabalhar com apenas seis colunas:
 - Tamanho do motor;
 - e Número de portas.
 
-![image](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/a5847220-0ac1-4d04-b6ce-efea7c33c7c2)
+![dados-head](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/a5847220-0ac1-4d04-b6ce-efea7c33c7c2)
 
-Após tratá-los, por exemplo, fazendo a exclusão de dados nulos e discrepantes, iniciei minhas análises em um DataFrame com 203.813 registros.
+Após tratá-los, por exemplo, fazendo a exclusão de dados nulos e discrepantes, iniciei minhas análises em um DataFrame com 203.813 registros. Começando pela estatística descritiva, observa-se que todas as colunas possuem a mesma quantidade de registros, na coluna *Preço*, os veículos vão de zł585,00 até quase 7 milhões de Zloty (moeda polonesa), achei o valor um pouco alto demais, que veremos com maior detalhe mais adiante. Em relação ao ano de fabricação, os veículos mais novos são de 2021, mas também há veículos de 1915. Já sobre os quilômetros rodados, o valor mínimo é de 1, onde podemos inferir que todos os veículos do DataFrame são usados.
 
+![describe](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/609cad2a-fff5-4b7f-833f-28971bd07609)
 
-
+Passando para a matriz de correlação, vemos que, em relação ao *Preço*, nossa variável dependente (Y), a *Potencia_motor* é a única que possui uma correlação maior do que 0,5. Em relação às variáveis *Ano_fabricação* e *Tamanho_motor*, vemos que também há uma associação positiva em relação ao *Preço*, enquanto para as variáveis *Km_rodado* e *Número_portas* há uma associação negativa. Podemos inferir que, quanto maior for a quilometragem rodada, o veículo precisará passar por uma análise mais rigorosa a cada manutenção, fator que pode jogar o preço de revenda para baixo. Já em relação ao número de portas, a inferência que consigo elaborar é em relação aos modelos dos carros: automóveis do tipo conversível/esportivo, que são os mais caros, possuem poucas portas. Por outro lado, veículos com preços mais acessíveis, que dão preferência à comodidade das pessoas, muitas vezes, oferecem mais espaço para passageiros, ou acomodação para transportar grandes objetos, consequentemente, eles precisam de um número maior de portas. Mas, não posso esquecer que há veículos, de duas portas, que não são do tipo conversível ou esportivo. Nesses casos, o carro oferece relativo conforto, baixo consumo de combustível e baixo custo de manutenção.
 
 
 
