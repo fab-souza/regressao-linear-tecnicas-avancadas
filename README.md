@@ -99,10 +99,13 @@ Passando para a distribuição de frequência dos *Preços*, vemos que o comport
 
 ![frequencias](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/19c99d08-4b28-4048-a967-3ba3e1533fbb)
 
+Para deixar a distribuição dos registros em um formato mais simétrico, apliquei a função matemática **logaritmo**, também conhecida como *log*, à todas as variáveis. 
 
+![image](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/731cb029-f66b-4e50-970c-dbff69bc475f)
 
+Verificamos o resultado desta transformação ao plotar um novo gráfico de distribuição de frequência dos preços dos carros. Nele, vemos que os dados assumiram um comportamento mais simétrico.
 
-
+![image](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/438dda64-12dd-4137-a766-9695242d8f3f)
 
 
 
