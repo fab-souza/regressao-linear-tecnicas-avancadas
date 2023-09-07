@@ -107,11 +107,19 @@ Verificamos o resultado desta transformação ao plotar um novo gráfico de dist
 
 ![image](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/438dda64-12dd-4137-a766-9695242d8f3f)
 
+Em seguida, determinei que a variável *log_preco* seria *y*, enquanto as variáveis *log_fabricacao*, *log_quilometragem*, *log_potencia* e *log_portas* seriam *X*. Repare que não utilizei a variável *log_tamanho_motor*, pois quis fazer um modelo apenas com estas variáveis, analisaria seu resultado e depois criaria um novo modelo. Fiz a separação entre os conjuntos de **Treino** e **Teste**, atribuindo uma porcentagem de 25% aos teste e um *random_state* de 9876.
 
+```
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, random_state = 9876)
+```
 
+Antes de criar o modelo, adicionei uma constante ao conjunto *X_train*, conhecido como *intercepto* ou *coeficiente linear do modelo*. Tive que fazer isso, porque em um modelo de regressão linear, a equação geralmente tem a forma:
 
+*y = ax + b*
+ 
+onde *a* é a inclinação (ou coeficiente) e *b* é a intercepção no eixo *y* (ou constante). A intercepção representa o valor esperado de *y* quando todas as variáveis independentes (*x*) são iguais a 0. Se eu não fizesse isso, os algoritmos de regressão linear, assumiriam que *b = 0* em *y = ax + b*, e ajustariam o modelo usando *b = 0* em vez de calcular o que ele deveria ser, com base nos dados.
 
-
+![image](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/ffb18c75-4c81-4604-bdde-a5f15e4300a3)
 
 
 
