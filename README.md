@@ -8,7 +8,7 @@
 | -------------  | --- |
 | :sparkles: Nome        | **Regressão Linear: técnicas avançadas de modelagem**
 | :label: Tecnologias | python
-| :rocket: URL         | Notebook
+| :rocket: URL         | [Notebook](https://www.kaggle.com/code/fabianadesouza/regressao-linear-2-preco-de-carros) no Kaggle
 | :fire: Desafio     | Conteúdo do [curso](https://www.alura.com.br/curso-online-data-science-modelo-regressao-linear-assimetria-statsmodel)
 
 ![](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/9b9aa0b1-2c78-4800-ac0f-c5c357e5b70d#vitrinadev)
