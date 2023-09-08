@@ -159,11 +159,9 @@ Bom… Infelizmente, não obtive um modelo de previsão de preço que chegou pr�
 
 Para melhorar o resultado, poderia verificar os outliers e considerar removê-los ou tratá-los de alguma forma. Ou verificar se há dados suficientes em todas as faixas de valores das variáveis independentes. Se encontrasse lacunas, poderia coletar mais dados nessas faixas. Ou até mesmo tentar ajustar os parâmetros do modelo ou experimentar diferentes algoritmos de *machine learning* para ver se consigo obter um ajuste melhor, algo que foi abordado em outros cursos desta formação e farei futuramente.
 
-
 ---
 
 Muito obrigada por chegar até aqui e até a próxima 🤗
-
 
 ## Ferramentas utilizadas 🧰
 
