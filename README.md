@@ -121,35 +121,48 @@ onde *a* é a inclinação (ou coeficiente) e *b* é a intercepção no eixo *y*
 
 ![image](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/ffb18c75-4c81-4604-bdde-a5f15e4300a3)
 
+O primeiro modelo, fiz através de uma estimação com *statsmodels* e para fazer sua avaliação, fiz um ‘*.summary()*’. Ele apresenta diversas informações estatísticas, por exemplo, no *R-squared* vemos que 72,8% da variação no *preço dos carros* pode ser explicada pelas variáveis independentes no modelo, também temos o *F-statistic* e o *Prob (F-statistic)*, que são o *teste F* e a *Aceitação*, respectivamente. Ter um teste F alto, no caso deste modelo é de 99790, e uma Aceitação menor do que 0.05, significa que o modelo de regressão é estatisticamente significativo, pois isso quer dizer que posso rejeitar a hipótese nula e concluir que pelo menos uma das variáveis independentes é significativamente relacionada à variável dependente.
 
+![image](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/aafb1fdb-e6ba-4536-8379-5cfa9641a339)
 
+Para testar, fiz um novo modelo, com as cinco variáveis no *X* e o resultado não foi muito diferente. O *R-squared* subiu para 0.728, a *Aceitação* se manteve em 0.00 e o *teste F* caiu para 81930, mas continuou um valor alto, indicando que também é um bom modelo.
 
+![summary](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/6ffea9a8-9e85-4558-a010-e04b2eb106c2)
 
+Mesmo com estes dois modelos, criei outro usando *LinearRegression*, do *scikit-learn*. Reaproveitei os conjuntos *X* e *y*, que já havia criado, para estimar o ajuste do modelo. Calculei o R² (R-squared) do conjunto de treino e obtive *0.728* de retorno.
 
+![r2-treino](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/5af8109a-2e65-43ce-b198-e8acf504ddc3)
 
+Gerei previsões para o conjunto de teste, calculei seu R² e obtive *0.731* de retorno. Considero o resultado positivo, já que ele não apresentou um valor muito diferente do R² calculado anteriormente.
 
+![r2-teste](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/8ac5861c-a3ea-4476-8608-ba699ae60c69)
 
+Após obter os resultados, fiz uma previsão pontual. Ou seja, forneci os dados do veículo e o modelo me retornou seu valor. Peguei os valores da primeira linha do conjunto de teste, armazenei seus registros em uma variável e passei ela para o último modelo treinado. O retorno foi de *10.14*, porque os valores estão na escala logarítmica e para obter o valor real do veículo, precisei inverter a transformação. Após aplicar a função exponencial ao resultado, obtive *25529.68*, que segundo o conversor do Google, é aproximadamente R$29.402,00.
 
+![zt](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/f0c522e6-4ba6-4931-b8b6-8d2fc96532e0)
 
+Também forneci novos dados para o modelo calcular o valor do automóvel. Armazenei nas variáveis *Ano_fabricacao*, *Km_rodado*, *Potencia_motor*, *Tamanho_motor* e *Numero_portas* alguns valores, os transformei em valores logarítmicos, passei para o modelo e inverti a transformação do valor calculado.
 
+![precos](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/e379b081-8b07-4c5a-9409-85baee312cf3)
 
+Fiz uma breve interpretação dos coeficientes do modelo. Na seguinte tabela, o intercepto representa o efeito médio em *y* (preço do carro) tendo todas as variáveis explicativas excluídas do modelo, ou seja, é o valor esperado da variável dependente quando todas as variáveis independentes são iguais a zero. No entanto, o *-1156.73*, após passar pela exponenciação, é 0. Os demais dados significam que um acréscimo de 1% àquela variável, haverá um acréscimo, ou decréscimo, no preço do veículo. Mantendo as demais variáveis, ao aumentar o ano de fabricação, potência do motor ou tamanho do motor causa um aumento de 152,67%, 0,76% e 0,45%, respectivamente. Enquanto que aumentar a quilometragem ou número de portas, causa um decréscimo de *-0,08* e *-0.29*, respectivamente, no preço.
 
+![tab](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/8e67b2a3-f0e9-41bd-840a-2bacc667b706)
+
+Para finalizar, plotei um gráfico comparando o preço *real* com o valor *previsto* pelo modelo. Nele, vemos que o lado esquerdo do gráfico está com um comportamento disperso, enquanto outra parte está mais uniforme, seguindo uma linha diagonal. Diante este comportamento, posso inferir que o modelo está funcionando bem para alguns valores, mas não para outros e isso pode acontecer por razões como a presença de outliers ou a falta de dados em algumas faixas de valores.
+
+![grafico](https://github.com/fab-souza/regressao-linear-tecnicas-avancadas/assets/67301805/ef2a6ea6-177c-4e19-9e53-4e89df0ba40d)
 
 # Conclusão 🏁
 
+Bom… Infelizmente, não obtive um modelo de previsão de preço que chegou próximo ao que foi feito durante o curso. Mesmo acertando mais do que 70% dos registros de teste, o gráfico entre **Real X Previsto** mostrou que o modelo não está funcionando bem em alguns casos.
+
+Para melhorar o resultado, poderia verificar os outliers e considerar removê-los ou tratá-los de alguma forma. Ou verificar se há dados suficientes em todas as faixas de valores das variáveis independentes. Se encontrasse lacunas, poderia coletar mais dados nessas faixas. Ou até mesmo tentar ajustar os parâmetros do modelo ou experimentar diferentes algoritmos de *machine learning* para ver se consigo obter um ajuste melhor, algo que foi abordado em outros cursos desta formação e farei futuramente.
 
 
+---
 
-
-
-
-
-
-
-
-
-
-
+Muito obrigada por chegar até aqui e até a próxima 🤗
 
 
 ## Ferramentas utilizadas 🧰
